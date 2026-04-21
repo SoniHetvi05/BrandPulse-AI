@@ -142,7 +142,7 @@ with tabs[0]:
 
     with col_r:
         st.subheader("Sentiment Score Trend (24h)")
-        times = pd.date_range(start='2026-04-14', periods=24, freq='H')
+        times = pd.date_range(start='2026-04-14', periods=24, freq='h')
         values = np.random.uniform(0.6, 0.85, 24)
         fig_trend = px.line(x=times, y=values, markers=True)
         fig_trend.update_traces(line_color='#007bff')
